@@ -1,0 +1,41 @@
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+.not-found-content {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.robot-container {
+    margin: 20px 0;
+}
+
+.robot-container img {
+    width: 150px; /* Ajusta según tu imagen */
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50; /* Color del botón */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #45a049; /* Color del botón en hover */
+}

@@ -1,0 +1,30 @@
+@import "./fonts.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#root {
+    height: 100%;
+    --br-sonoma-bold: br-sonoma-bold;
+    --br-sonoma-medium: br-sonoma-medium;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: -1;
+}

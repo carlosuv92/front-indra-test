@@ -1,0 +1,19 @@
+@font-face {
+    font-family: br-sonoma-bold;
+    src: url(./BRSonoma-Bold.otf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: br-sonoma-medium;
+    src: url(./BRSonoma-Medium.otf) format("opentype");
+    font-display: swap;
+}
+
+.font-br-sonoma-bold {
+    font-family: br-sonoma-bold, sans-serif;
+}
+
+.font-br-sonoma-medium {
+    font-family: br-sonoma-medium, sans-serif;
+}

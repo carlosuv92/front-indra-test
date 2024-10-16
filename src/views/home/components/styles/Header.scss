@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 120px;
+    background-color: #fff;
+
+    &__logo {
+        width: 73.19px;
+        height: 36px;
+        object-fit: contain;
+    }
+
+    &__contact {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__slogan {
+        font-family: var(--br-sonoma-medium), sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+    &__number {
+        font-family: var(--br-sonoma-bold), sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 24px;
+        &__slogan {
+            display: none;
+        }
+    }
+}
