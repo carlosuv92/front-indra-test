@@ -9,6 +9,7 @@
         font-size: calc(1.5rem * var(--scale));
         font-family: var(--br-sonoma-bold), sans-serif;
         margin-bottom: calc(5rem * var(--scale));
+        cursor: pointer;
     }
     &__title {
         font-size: calc(3rem * var(--scale));
