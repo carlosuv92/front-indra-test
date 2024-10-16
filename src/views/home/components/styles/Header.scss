@@ -2,13 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 120px;
+    padding: 10px 120px;
     background-color: #fff;
 
     &__logo {
         width: 73.19px;
         height: 36px;
         object-fit: contain;
+        cursor: pointer;
     }
 
     &__contact {

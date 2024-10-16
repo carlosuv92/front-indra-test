@@ -1,7 +1,7 @@
 import { User } from "../domain/User";
 import { UserRepository } from "../domain/UserRepository";
 
-export const FetchTaskRepository = (): UserRepository => {
+export const FetchUserRepository = (): UserRepository => {
     return {
         getUser: async () => {
             const response = await fetch("https://rimac-front-end-challenge.netlify.app/api/user.json");

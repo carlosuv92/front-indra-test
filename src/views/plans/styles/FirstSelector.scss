@@ -1,0 +1,65 @@
+.container__selector__item {
+    position: relative;
+    width: 250px;
+    height: 215px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    img {
+        width: 48px;
+    }
+    &__name {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-family: var(--br-sonoma-bold), sans-serif;
+    }
+    &__description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        font-family: var(--br-sonoma-medium), sans-serif;
+    }
+    &.selected {
+        border: 2px solid gray;
+    }
+}
+
+.container__selector {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.circular-checkbox-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 2px solid #4caf50;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    label.checked {
+        background-color: #4caf50;
+        color: white;
+    }
+}

@@ -1,0 +1,60 @@
+.container__selector__plans {
+    width: 288px;
+    height: 627px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    img {
+        width: 48px;
+        height: 48px;
+    }
+    &__label {
+        font-size: 13px;
+        font-family: var(--br-sonoma-medium), sans-serif;
+        color: gray;
+    }
+    &__plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+        padding: 5px;
+    }
+    &__amount {
+        font-size: 1.1rem;
+        font-family: var(--br-sonoma-bold), sans-serif;
+    }
+    &__descriptions {
+        height: 380px;
+    }
+    &__description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        font-family: var(--br-sonoma-medium), sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: left;
+        padding: 30px;
+        li {
+            font-size: 16px;
+        }
+    }
+}
+
+.mt-6 {
+    margin-top: 25px;
+}
+
+.buttonSelectPlan {
+    width: 100%;
+    background-color: #ff1c44;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.headerText {
+    height: 125px;
+}

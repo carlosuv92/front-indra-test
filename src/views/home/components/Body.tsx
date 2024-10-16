@@ -9,7 +9,7 @@ import LoginForm from "./parts/LoginForm"
 import { useEffect, useState } from "react"
 import { FormError } from "../../../modules/Form/domain/FormError"
 import { useForm } from "react-hook-form"
-import { FetchTaskRepository } from "../../../modules/Users/infrastructure/FetchTaskRepository"
+import { FetchUserRepository } from "../../../modules/Users/infrastructure/FetchUserRepository"
 import { User } from "../../../modules/Users/domain/User"
 import { LocalStorageRepository } from "../../../modules/Users/infrastructure/LocalStorageRepository"
 
@@ -20,7 +20,7 @@ const errorMessage = {
   acceptCommercialCommunications:
     "Por favor, acepta la Política de Comunicaciones Comerciales.",
 }
-const repository = FetchTaskRepository()
+const repository = FetchUserRepository()
 const localRepository = LocalStorageRepository()
 
 export default function Body() {
