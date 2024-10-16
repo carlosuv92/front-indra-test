@@ -2,38 +2,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 120px;
-    background-color: #fff;
+    padding: calc(1rem * var(--scale)) calc(12rem * var(--scale));
+    height: calc(5.6rem * var(--scale));
+    background-color: #fafaff;
 
     &__logo {
-        width: 73.19px;
-        height: 36px;
+        width: calc(7.3rem * var(--scale));
+        height: calc(3.6rem * var(--scale));
         object-fit: contain;
         cursor: pointer;
     }
 
     &__contact {
         display: flex;
-        gap: 16px;
+        gap: calc(1.6rem * var(--scale));
     }
 
     &__slogan {
         font-family: var(--br-sonoma-medium), sans-serif;
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 16px;
+        font-size: calc(1.2rem * var(--scale));
+        line-height: calc(1.6rem * var(--scale));
     }
     &__number {
         font-family: var(--br-sonoma-bold), sans-serif;
-        font-size: 18px;
+        font-size: calc(1.8rem * var(--scale));
         font-weight: 700;
-        line-height: 16px;
+        line-height: calc(1.6rem * var(--scale));
     }
 }
 
 @media (max-width: 768px) {
     .header {
-        padding: 12px 24px;
+        padding: calc(1.2rem * var(--scale)) calc(2.4rem * var(--scale));
         &__slogan {
             display: none;
         }

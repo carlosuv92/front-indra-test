@@ -4,17 +4,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 120px;
+    padding: calc(3.2rem * var(--scale)) calc(12rem * var(--scale));
     background-color: #03050f;
 
     &__logo {
-        width: 73.19px;
-        height: 36px;
+        width: calc(7.3rem * var(--scale));
+        height: calc(3.6rem * var(--scale));
         object-fit: contain;
     }
 
     &__text {
-        font-size: 14px;
+        font-size: calc(1.4rem * var(--scale));
         font-weight: 400;
         color: #fff;
     }
@@ -24,14 +24,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15px 24px;
-        gap: 16px;
+        padding: calc(1.5rem * var(--scale)) calc(2.4rem * var(--scale));
+        gap: calc(1.6rem * var(--scale));
         &__logo {
-            height: 20px;
+            height: calc(2rem * var(--scale));
             object-fit: contain;
         }
         &__text {
-            font-size: 10px;
+            font-size: calc(1rem * var(--scale));
             font-weight: 400;
             color: #fff;
         }

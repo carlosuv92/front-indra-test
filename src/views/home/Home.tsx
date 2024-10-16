@@ -4,7 +4,7 @@ import "../../styles/main.scss"
 
 export default function Home() {
   return (
-    <div className="layout">
+    <div className="layout-home">
       <Body />
       <Footer />
     </div>

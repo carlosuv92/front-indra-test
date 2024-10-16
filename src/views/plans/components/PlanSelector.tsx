@@ -4,9 +4,14 @@ import "../styles/PlanSelector.scss"
 interface PlanSelectorProps {
   plan: Plan
   onClick: () => void
+  selected: number
 }
 
-export default function PlanSelector({ onClick, plan }: PlanSelectorProps) {
+export default function PlanSelector({
+  onClick,
+  plan,
+  selected,
+}: PlanSelectorProps) {
   return (
     <div className="container__selector__plans">
       <div className="headerText">
@@ -15,8 +20,13 @@ export default function PlanSelector({ onClick, plan }: PlanSelectorProps) {
           <img src={plan.image} alt="logo" />
         </div>
         <div className="container__selector__plans__label">COSTO DEL PLAN</div>
+        {selected == 1 && (
+          <div className="container__selector__plans__amount__before">
+            $ {plan.price} antes
+          </div>
+        )}
         <div className="container__selector__plans__amount">
-          $ {plan.price} al mes{" "}
+          $ {plan.price - (selected == 1 ? plan.price * 0.05 : 0)} al mes
         </div>
       </div>
       <hr />

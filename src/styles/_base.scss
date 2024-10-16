@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--white-primary);
+    font-family: "Raleway", sans-serif;
+    color: var(--gray-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+.w-paragraph {
+    font:
+        normal normal 500 var(--font-size-base) / 1.7 "Raleway",
+        sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

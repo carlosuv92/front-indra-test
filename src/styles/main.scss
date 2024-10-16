@@ -1,13 +1,15 @@
 @import "./fonts.scss";
+@import "_base.scss";
+@import "_sizes.scss";
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #fafaff;
 }
 html {
     box-sizing: border-box;
-    font-size: 100%;
 }
 
 *,
@@ -22,9 +24,10 @@ html {
     --br-sonoma-medium: br-sonoma-medium;
 }
 
-.layout {
+.layout-home {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - calc(5.6rem * var(--scale)));
     z-index: -1;
 }

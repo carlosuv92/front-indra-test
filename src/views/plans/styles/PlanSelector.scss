@@ -1,15 +1,15 @@
 .container__selector__plans {
-    width: 288px;
-    height: 627px;
+    width: calc(28.8rem * var(--scale));
+    height: calc(62rem * var(--scale));
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 1rem;
+    padding: calc(1rem * var(--scale));
     img {
-        width: 48px;
-        height: 48px;
+        width: calc(4.8rem * var(--scale));
+        height: calc(4.8rem * var(--scale));
     }
     &__label {
-        font-size: 13px;
+        font-size: calc(1.3rem * var(--scale));
         font-family: var(--br-sonoma-medium), sans-serif;
         color: gray;
     }
@@ -17,33 +17,38 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10px 0px;
-        padding: 5px;
+        margin: calc(1rem * var(--scale)) 0;
+        padding: calc(0.2rem * var(--scale));
     }
     &__amount {
-        font-size: 1.1rem;
+        font-size: calc(1.5rem * var(--scale));
         font-family: var(--br-sonoma-bold), sans-serif;
+        &__before {
+            color: gray;
+            text-decoration: line-through;
+            padding: 1px 0;
+        }
     }
     &__descriptions {
-        height: 380px;
+        height: calc(38rem * var(--scale));
     }
     &__description {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        font-size: calc(1rem * var(--scale));
+        margin-bottom: calc(1rem * var(--scale));
         font-family: var(--br-sonoma-medium), sans-serif;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: calc(2.5rem * var(--scale));
         text-align: left;
-        padding: 30px;
+        padding: calc(3rem * var(--scale));
         li {
-            font-size: 16px;
+            font-size: calc(1.6rem * var(--scale));
         }
     }
 }
 
 .mt-6 {
-    margin-top: 25px;
+    margin-top: calc(2.5rem * var(--scale));
 }
 
 .buttonSelectPlan {
@@ -51,10 +56,11 @@
     background-color: #ff1c44;
     color: white;
     border: none;
-    padding: 14px 32px;
+    padding: calc(1.5rem * var(--scale)) calc(3.2rem * var(--scale));
     border-radius: 20px;
     cursor: pointer;
 }
 .headerText {
-    height: 125px;
+    height: calc(12.5rem * var(--scale));
+    padding: calc(1.5rem * var(--scale));
 }

@@ -74,7 +74,7 @@ const LoginForm = ({
         />
 
         <label htmlFor="cel" className="before">
-          <div className="paragraph font-br-sonoma-regular">Celular</div>
+          <div className="paragraph font-br-sonoma-medium">Celular</div>
         </label>
       </div>
 

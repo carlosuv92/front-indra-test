@@ -1,28 +1,60 @@
 .container {
+    margin-top: calc(2.5rem * var(--scale));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &__content {
-        width: 544px;
+        width: calc(54rem * var(--scale));
         text-align: center;
     }
 }
 
 .greetings {
-    font-size: 2.2rem;
+    font-size: calc(2.5rem * var(--scale));
     margin-bottom: 1rem;
     font-family: var(--br-sonoma-bold), sans-serif;
 }
 
 .optionText {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: calc(1.2rem * var(--scale));
+    margin-bottom: calc(2rem * var(--scale));
     font-family: var(--br-sonoma-medium), sans-serif;
 }
 
 .container_plans {
     display: flex;
-    gap: 10px;
-    padding: 10px;
+    gap: calc(1rem * var(--scale));
+    padding: calc(1rem * var(--scale));
+    transform: unset;
+}
+.buttonNumbers {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        overflow-x: hidden;
+        &__content {
+            width: 100%;
+        }
+    }
+    .container_plans {
+        transition: transform 0.5s ease-in-out;
+    }
+    .buttonNumbers {
+        display: flex;
+        gap: calc(1rem * var(--scale));
+        padding: calc(1rem * var(--scale));
+        margin-bottom: calc(1rem * var(--scale));
+        .buttonNext {
+            color: white;
+            font-weight: 600;
+            border-radius: 50%;
+            border: none;
+            background-color: #ff1c44;
+            width: calc(2.5rem * var(--scale));
+            height: calc(2.5rem * var(--scale));
+        }
+    }
 }

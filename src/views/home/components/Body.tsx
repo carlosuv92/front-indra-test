@@ -46,7 +46,7 @@ export default function Body() {
   })
 
   const [documentMaxLength, setDocumentMaxLength] = useState(8)
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit } = useForm()
 
   const validateForm = () => {
     let hasError = false
@@ -94,7 +94,6 @@ export default function Body() {
     }
     const newErrors = { ...errors }
 
-    // Limpia los errores de los campos al escribir
     newErrors.document = null
     newErrors.phoneNumber = null
     newErrors.acceptPrivacyPolicy = null
@@ -122,11 +121,8 @@ export default function Body() {
     setErrors(newErrors)
   }
 
-  const onSubmit = handleSubmit((e) => {
-    console.log("data", e)
-    register("documentNumber")
+  const onSubmit = handleSubmit(() => {
     if (validateForm() && user) {
-      console.log("Form valido", formData)
       const newUser: User = {
         documentType: formData.documentType,
         documentNumber: formData.documentNumber,
