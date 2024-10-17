@@ -136,7 +136,7 @@ const LoginForm = ({
         </div>
 
         <div className="block-btn mt-6">
-          <button aria-label="clear" role="button" className="btn btn-primary">
+          <button aria-label="clear" role="button" className="btnSubmit">
             Cotiza aqui
           </button>
         </div>
