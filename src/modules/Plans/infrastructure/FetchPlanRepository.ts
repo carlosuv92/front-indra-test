@@ -22,14 +22,18 @@ export const FetchPlanRepository = (): PlanRepository => {
 
 
 export const validateAge = (birthDay: string): number => {
-    const date = new Date(birthDay);
+    const [day, month, year] = birthDay.split('-').map(Number); // Convertir a números
+    const birthDate = new Date(year, month - 1, day); // Crear fecha correcta
     const today = new Date();
-    let age = today.getFullYear() - date.getFullYear();
-    if (today.getMonth() < date.getMonth()) {
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    if (
+        today.getMonth() < birthDate.getMonth() ||
+        (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
+    ) {
         age--;
     }
-    if (today.getMonth() === date.getMonth() && today.getDate() < date.getDate()) {
-        age--;
-    }
+
     return age;
-}
+};
