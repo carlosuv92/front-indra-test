@@ -20,7 +20,7 @@ const LoginForm = ({
   documentMaxLength,
 }: LoginFormProps) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} role="form">
       <h2>
         Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra
         asesoría. 100% online.
@@ -136,7 +136,7 @@ const LoginForm = ({
         </div>
 
         <div className="block-btn mt-6">
-          <button type="submit" className="btnSubmit">
+          <button aria-label="clear" role="button" className="btnSubmit">
             Cotiza aqui
           </button>
         </div>

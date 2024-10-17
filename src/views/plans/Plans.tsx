@@ -85,7 +85,7 @@ export default function Plans() {
   return (
     <div className="container">
       <div className="container__content">
-        <div className="greetings">
+        <div className="greetings" data-testid="greetings">
           {user?.name} ¿Para quién deseas cotizar?
         </div>
         <div className="optionText">
